@@ -27,6 +27,9 @@ a global-context model scores slightly higher on raw pixel error.
 - **4,176 pattern images**, de-duplicated from 14,740 collected, about 95% pure geometric patterns.
   Regions include Egypt, India (Mughal), Iran, Morocco, Spain, Syria, Central Asia and Turkey.
 - Split **3,340 / 417 / 419** (train / validation / test), processed at **512 × 512**.
+- Training images are augmented on the fly with 90° rotations and flips, so every pattern is seen in
+  **8 orientations** (about 33,000 image variants from the 4,176 originals). Geometric patterns are
+  symmetric, so these copies stay valid examples.
 - Damage is simulated with irregular, rectangular and crack-shaped masks on known originals, so every
   repair can be scored against ground truth.
 - The images are **not redistributed here**: they are copyrighted (© David Wade, *Pattern in Islamic Art*,
@@ -82,11 +85,10 @@ python scripts/prepare_dataset.py --input ./your_images --output ./dataset --siz
 python scripts/evaluate.py --gt ./dataset/test/images --pred ./results --output evaluation.json
 ```
 
-## Team
+## Author
 
-Research by **Team Labaik**, BS Artificial Intelligence, University of Central Punjab:
-Talha Abid, Abdullah Zafar, Abdul Rehman and Waqar Hussain.
-Supervised by Mr. Muhammad Yasin Nasir.
+**Talha Abid**, BS Artificial Intelligence, University of Central Punjab, Lahore.
+Supervised by **Mr. Muhammad Yasin Nasir**, Lecturer, Faculty of Information Technology & Computer Science.
 
 ## References
 
@@ -102,7 +104,7 @@ Supervised by Mr. Muhammad Yasin Nasir.
 
 ```bibtex
 @misc{abid2026geometric,
-  author    = {Talha Abid and Abdullah Zafar and Abdul Rehman and Waqar Hussain},
+  author    = {Talha Abid},
   title     = {Structure-Guided Restoration of High-Density Historical Geometric Patterns},
   year      = {2026},
   publisher = {GitHub},
