@@ -3,7 +3,7 @@ Dataset Preparation Script for Structure-Guided Image Inpainting
 Mughal Heritage Tile Restoration Project
 
 This script prepares the training dataset by:
-1. Loading images from HuggingFace Islamic Art dataset
+1. Loading images from HuggingFace art dataset
 2. Adding custom Mughal architecture images
 3. Generating synthetic damage masks
 4. Extracting Canny edge maps
@@ -182,7 +182,7 @@ def extract_canny_edges(image: np.ndarray,
                         high_threshold: int = 150) -> np.ndarray:
     """
     Extract edge map using Canny edge detector.
-    Critical for preserving geometric patterns in Islamic art.
+    Critical for preserving geometric patterns in historical art.
     
     Args:
         image: Input RGB image
@@ -340,7 +340,7 @@ def prepare_dataset(input_dir: str,
 
 def download_huggingface_dataset(output_dir: str) -> str:
     """
-    Download Islamic Art dataset from HuggingFace.
+    Download art dataset from HuggingFace.
     
     Args:
         output_dir: Directory to save downloaded images
@@ -351,15 +351,15 @@ def download_huggingface_dataset(output_dir: str) -> str:
     try:
         from datasets import load_dataset
         
-        print("Downloading Islamic Art dataset from HuggingFace...")
+        print("Downloading art dataset from HuggingFace...")
         dataset = load_dataset("adhamelarabawy/islamic_art", split="train")
         
-        img_dir = os.path.join(output_dir, "huggingface_islamic_art")
+        img_dir = os.path.join(output_dir, "huggingface_art")
         os.makedirs(img_dir, exist_ok=True)
         
         for i, item in enumerate(dataset):
             image = item['image']
-            image.save(os.path.join(img_dir, f"islamic_art_{i:05d}.png"))
+            image.save(os.path.join(img_dir, f"art_{i:05d}.png"))
             
             if (i + 1) % 100 == 0:
                 print(f"  Downloaded {i + 1}/{len(dataset)} images")

@@ -1,4 +1,4 @@
-# Gap Analysis: Structure-Guided Restoration of High-Density Islamic Geometric Patterns
+# Gap Analysis: Structure-Guided Restoration of High-Density Historical Geometric Patterns
 
 This document identifies the specific research gaps that our work aims to address, providing the scientific justification for the novelty of this research.
 
@@ -9,7 +9,7 @@ This document identifies the specific research gaps that our work aims to addres
 ### Current State of Art
 - **CelebA/Places2:** Widely used benchmarks for inpainting (faces, landscapes).
 - **Edge Density:** Typically 8-15 (low complexity).
-- **Islamic Patterns:** No standardized, publicly available benchmark exists.
+- **Geometric Patterns:** No standardized, publicly available benchmark exists.
 
 ### Our Contribution
 - **Dataset Size:** 4,000+ curated images from India, Iran, Morocco, Transoxiana.
@@ -53,7 +53,7 @@ This document identifies the specific research gaps that our work aims to addres
 
 ### Our Contribution
 - **Proposed Addition:** "Symmetry Consistency Loss" – penalizing deviations from expected symmetry axes.
-- **Impact:** Forces the model to learn the *mathematical rules* of Islamic geometry, not just pixel patterns.
+- **Impact:** Forces the model to learn the *mathematical rules* of pattern geometry, not just pixel patterns.
 
 ---
 
@@ -61,7 +61,7 @@ This document identifies the specific research gaps that our work aims to addres
 
 ### Current State of Art
 - **Random Crops/Flips:** Standard augmentations.
-- **Problem:** Don't account for the rotational/reflective symmetry inherent in Islamic patterns.
+- **Problem:** Don't account for the rotational/reflective symmetry inherent in geometric patterns.
 
 ### Our Contribution
 - **Proposed Augmentation:** 90°/180°/270° rotations to teach the model that patterns are orientation-invariant.

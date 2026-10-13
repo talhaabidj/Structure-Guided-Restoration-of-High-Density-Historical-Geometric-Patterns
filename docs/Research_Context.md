@@ -1,4 +1,4 @@
-# Research Context: Structure-Guided Restoration of High-Density Islamic Geometric Patterns
+# Research Context: Structure-Guided Restoration of High-Density Historical Geometric Patterns
 
 **Date:** December 30, 2025
 **Status:** Ground Level Restart
@@ -6,10 +6,10 @@
 ---
 
 ## 1. The Research Topic
-**Title:** *Structure-Guided Restoration of High-Density Islamic Geometric Patterns in Deteriorating Heritage*
+**Title:** *Structure-Guided Restoration of High-Density Historical Geometric Patterns in Deteriorating Heritage*
 
 **The Core Problem:**
-Islamic Geometric Patterns (IGPs) are characterized by "High-Density" (Edge Density > 45%) and strict mathematical symmetry. Standard Deep Learning inpainting models (like LaMa or Stable Diffusion) treat these patterns as random textures, resulting in blurry, geometrically invalid restorations when filling large holes.
+Historical Geometric Patterns (HGPs) are characterized by "High-Density" (Edge Density > 45%) and strict mathematical symmetry. Standard Deep Learning inpainting models (like LaMa or Stable Diffusion) treat these patterns as random textures, resulting in blurry, geometrically invalid restorations when filling large holes.
 
 **The Objective:**
 To demonstrate that a **Structure-Guided Approach** (explicitly reconstructing edges before colors) is superior to Global Context approaches for this specific niche of high-density geometric heritage.
@@ -42,11 +42,11 @@ This is the core of our research methodology:
 ## 2. State of the Art (Literature Review Summary)
 ### What Exists:
 1.  **Digital Heritage:** Extensive work on 3D scanning (LiDAR) and AR/VR visualization of sites.
-2.  **Pattern Generation:** Use of GANs to *create* new Islamic patterns from scratch.
+2.  **Pattern Generation:** Use of GANs to *create* new geometric patterns from scratch.
 3.  **General Inpainting:** Strong models for natural scenes (Places2) and faces (CelebA), typically achieving 25-28 dB PSNR.
 
 ### What is Missing (The Research Gap):
-1.  **No "ImageNet" for IGPs:** There is no standard, large-scale benchmark dataset for Islamic Geometric Patterns. Most research uses small, synthetic, or private datasets.
+1.  **No "ImageNet" for HGPs:** There is no standard, large-scale benchmark dataset for Historical Geometric Patterns. Most research uses small, synthetic, or private datasets.
 2.  **The "Density" Blind Spot:** Existing models are not evaluated on patterns with Edge Density > 40%. They fail to preserve high-frequency geometry.
 3.  **Restoration vs. Generation:** Very little work focuses on the *restoration* of damaged high-density patterns using Deep Learning.
 
@@ -61,7 +61,7 @@ We are filling the gap by:
 ---
 
 ## 4. The Dataset
-*   **Name:** Islamic Patterns Dataset
+*   **Name:** Geometric Patterns Dataset
 *   **Source:** Curated from `guest-contributions` (India, Iran, Morocco, etc.).
 *   **Size:** ~4,000+ images.
 *   **Complexity:** High Entropy (7.47), High Edge Density (45.96).
@@ -103,7 +103,7 @@ We are filling the gap by:
 
 ### 6.3 Data Augmentation Strategy
 We will use **Online Augmentation** (applied on-the-fly during training) to expand the effective dataset size by 8x without consuming disk space.
-*   **Rotations:** 90°, 180°, 270° (Valid due to Islamic geometric symmetry).
+*   **Rotations:** 90°, 180°, 270° (Valid due to the patterns' geometric symmetry).
 *   **Flips:** Horizontal, Vertical.
 *   **Crops:** Random resized crops to focus on local details.
 

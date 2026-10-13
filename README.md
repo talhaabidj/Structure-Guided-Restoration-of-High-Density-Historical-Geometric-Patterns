@@ -6,7 +6,7 @@
 > **Status:** ongoing research at the University of Central Punjab, Lahore, under the supervision of
 > **Mr. Muhammad Yasin Nasir** (Faculty of Information Technology & Computer Science).
 
-Can deep learning repair damaged Islamic geometric patterns, the tile work, plaster and woodwork of
+Can deep learning repair damaged historical geometric patterns, the tile work, plaster and woodwork of
 heritage sites, without breaking their geometry? This project builds a dataset of geometric patterns,
 damages them in controlled ways, and measures how well image-repair (inpainting) models put them back.
 
@@ -51,7 +51,7 @@ Final runs on the 419-image test set, 512 × 512, 90 epochs each.
 
 ### What changed from the first phase
 
-The first phase used a public 1,615-image Islamic-art set (pottery, carpets and calligraphy mixed in) at
+The first phase used a public 1,615-image art dataset (pottery, carpets and calligraphy mixed in) at
 256 × 256. There, classical OpenCV inpainting beat both deep models (21.27 dB vs 18.99 dB for the best LaMa
 run). Building a clean, pattern-only dataset 2.6× larger, adding a geometric consistency loss (Sobel edges +
 Laplacian detail) and training at 512 × 512 is what moved both models past the classical baseline. The loss

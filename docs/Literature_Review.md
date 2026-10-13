@@ -1,4 +1,4 @@
-# Literature Review: Structure-Guided Restoration of High-Density Islamic Geometric Patterns
+# Literature Review: Structure-Guided Restoration of High-Density Historical Geometric Patterns
 
 ## 1. Core Inpainting Methods
 
@@ -25,7 +25,7 @@
 ## 2. Heritage & Cultural Preservation
 
 ### 2.1 Digital Heritage Preservation
-- **CyArk Initiative:** 3D laser scanning of Islamic cultural sites.
+- **CyArk Initiative:** 3D laser scanning of cultural heritage sites.
 - **Key Techniques:** LiDAR, Photogrammetry, AR/VR visualization.
 - **Gap:** Focus on documentation, not restoration of damaged patterns.
 
@@ -35,7 +35,7 @@
 
 ---
 
-## 3. Islamic Geometric Pattern Analysis
+## 3. Historical Geometric Pattern Analysis
 
 ### 3.1 Pattern Classification
 - **Paper:** Classification of Islamic Geometric Patterns using CNNs
@@ -66,10 +66,10 @@
 | **KID** (Kernel Inception Distance) | Similar to FID, unbiased | Small sample sizes |
 
 ### Tier 3: Geometry-Specific Metrics ★ (Domain-Specific Contribution)
-| Metric | What it Measures | Why It Matters for Islamic Patterns |
+| Metric | What it Measures | Why It Matters for Geometric Patterns |
 |--------|-----------------|-------------------------------------|
 | **Edge IoU** | Overlap of Canny edges (original vs. restored) | Measures if geometric *lines* are preserved |
-| **Symmetry Score** | Bilateral/radial symmetry consistency | Islamic patterns are mathematically symmetric |
+| **Symmetry Score** | Bilateral/radial symmetry consistency | Geometric patterns are mathematically symmetric |
 | **Hough Line Accuracy** | Difference in detected straight lines | Checks if lines remain straight, not curved |
 | **Figure of Merit (FOM)** | Edge accuracy with tolerance for slight offsets | Standard edge detection benchmark |
 
@@ -84,6 +84,6 @@
 ---
 
 ## 5. Research Gap Summary
-1. **No standard dataset** for High-Density Islamic Geometric Pattern restoration.
+1. **No standard dataset** for High-Density Historical Geometric Pattern restoration.
 2. **No benchmark** comparing structure-guided vs. global-context methods for this niche.
 3. **No geometric-specific loss functions** (e.g., Symmetry Loss) applied to this domain.
