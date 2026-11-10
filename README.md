@@ -4,7 +4,7 @@
 [![License: GPL v3](https://img.shields.io/badge/Code-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 > **Status:** ongoing research at the University of Central Punjab, Lahore, under the supervision of
-> **Mr. Muhammad Yasin Nasir** (Faculty of Information Technology & Computer Science).
+> **Mr. Muhammad Yasin Nasir** (Faculty of Information Technology & Computer Science) and **Ms. Kainat Ijaz**.
 
 Can deep learning repair damaged historical geometric patterns, the tile work, plaster and woodwork of
 heritage sites, without breaking their geometry? This project builds a dataset of geometric patterns,
@@ -88,7 +88,7 @@ python scripts/evaluate.py --gt ./dataset/test/images --pred ./results --output 
 ## Author
 
 **Talha Abid**, BS Artificial Intelligence, University of Central Punjab, Lahore.
-Supervised by **Mr. Muhammad Yasin Nasir**, Lecturer, Faculty of Information Technology & Computer Science.
+Supervised by **Mr. Muhammad Yasin Nasir**, Lecturer, Faculty of Information Technology & Computer Science, and **Ms. Kainat Ijaz**.
 
 ## References
 
